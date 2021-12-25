@@ -2,6 +2,11 @@ name: Turkish
 help: |
   <b>Bot</b> istatistiklerinizi izlemenizi ve görüntülemenizi sağlar
 language: Lütfen, dili seçin.
-language_selected: <b>Bot</b> Türkçe konuşuyor.
+language_selected: <b>Bot</b> Türkçe konuşuyor 🇹🇷
 track: Ne izlemek istiyorsun?
 getStats: Hangi istatistikleri görmek istiyorsun
+categoryExists: Görünüşe göre bu kategori zaten var
+categoryAdded: Great, you've added a category to track!
+categoryIncremented: Cool, one more!
+errorMessage: Ouch, looks like something went wrong, please try again
+waitCategory: Please provide a proper category name

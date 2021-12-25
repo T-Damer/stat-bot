@@ -2,6 +2,11 @@ name: English
 help: |
   <b>This bot</b> allows you to track and display your statistics
 language: Please, select the language.
-language_selected: <b>This bot</b> now speaks English.
+language_selected: <b>This bot</b> now speaks English 🇺🇸
 track: What do you want to track?
 getStats: Which statistics do you want to see?
+categoryExists: Looks like this category already exists
+categoryAdded: Great, you've added a category to track!
+categoryIncremented: Cool, one more!
+errorMessage: Ouch, looks like something went wrong, please try again
+waitCategory: Please provide a proper category name

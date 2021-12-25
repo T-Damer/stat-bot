@@ -1,4 +1,5 @@
 import { getModelForClass, modelOptions, prop } from '@typegoose/typegoose'
+import Track from '@/models/Track'
 
 @modelOptions({ schemaOptions: { timestamps: true } })
 export class User {
@@ -6,9 +7,11 @@ export class User {
   id!: number
   @prop({ required: true, default: 'en' })
   language!: string
+  @prop({ index: true, unique: true, default: {} })
+  track!: Track
 }
 
-const UserModel = getModelForClass(User)
+export const UserModel = getModelForClass(User)
 
 export function findOrCreateUser(id: number) {
   return UserModel.findOneAndUpdate(
@@ -19,4 +22,23 @@ export function findOrCreateUser(id: number) {
       new: true,
     }
   )
+}
+
+export async function addOrIncrementTrackCategory(
+  userId: number,
+  category: string
+) {
+  const user = await findOrCreateUser(userId)
+  if (user.track[category] !== undefined) {
+    await UserModel.updateOne(
+      { id: userId },
+      { $set: { [`track.${category}`]: user.track[category] + 1 } }
+    )
+    return { success: false }
+  }
+  await UserModel.updateOne(
+    { id: userId },
+    { $set: { [`track.${category}`]: 0 } }
+  )
+  return { success: true }
 }

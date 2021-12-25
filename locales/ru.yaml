@@ -2,6 +2,11 @@ name: Русский
 help: |
   <b>Бот</b> позволяет вам следить и отображать вашу статистику
 language: Пожалуйста, выберите язык.
-language_selected: <b>Бот</b> теперь говорит по-русски.
+language_selected: <b>Бот</b> теперь говорит по-русски 🇷🇺
 track: Что будем отслеживать?
 getStats: Какую статистику хотите увидеть?
+categoryExists: Похоже такая категория уже существует
+categoryAdded: Great, you've added a category to track!
+categoryIncremented: Cool, one more!
+errorMessage: Ouch, looks like something went wrong, please try again
+waitCategory: Please provide a proper category name
