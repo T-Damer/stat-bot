@@ -3,3 +3,5 @@ help: |
   <b>This bot</b> allows you to track and display your statistics
 language: Please, select the language.
 language_selected: <b>This bot</b> now speaks English.
+track: What do you want to track?
+getStats: Which statistics do you want to see?

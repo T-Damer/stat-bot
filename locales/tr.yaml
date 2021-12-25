@@ -3,3 +3,5 @@ help: |
   <b>Bot</b> istatistiklerinizi izlemenizi ve görüntülemenizi sağlar
 language: Lütfen, dili seçin.
 language_selected: <b>Bot</b> Türkçe konuşuyor.
+track: Ne izlemek istiyorsun?
+getStats: Hangi istatistikleri görmek istiyorsun
